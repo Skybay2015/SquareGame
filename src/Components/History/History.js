@@ -17,7 +17,7 @@ const History = () => {
                     </div>
                  );
               })
-            : 'move over square'}
+            : 'Move over square'}
       </div>
    );
 };

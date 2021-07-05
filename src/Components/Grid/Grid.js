@@ -7,10 +7,6 @@ import './styles.sass';
 const Grid = ({ size }) => {
    const grid = useMemo(() => createGrid(size), [size]);
 
-   const handleMouseEnter = (e) => {
-      e.target.style.background = '#000';
-   };
-
    return (
       <div className='grid'>
          {grid.map((row, rowId) => {
@@ -22,7 +18,6 @@ const Grid = ({ size }) => {
                            key={Math.random() * Date.now()}
                            rowId={rowId}
                            colId={colId}
-                           mouseEnterHandler={handleMouseEnter}
                         />
                      );
                   })}
