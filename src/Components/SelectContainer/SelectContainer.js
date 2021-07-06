@@ -28,7 +28,7 @@ const SelectContainer = ({ presets }) => {
          <Select
             className='select'
             onChange={handleChange}
-            options={memoizedCreateOptions(presets)}
+            options={memoizedCreateOptions()}
          />
          <button className='select__button' onClick={() => handleClick(mode)}>
             START

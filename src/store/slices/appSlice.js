@@ -27,7 +27,7 @@ const appSlice = createSlice({
       setRowAndCol: (state, action) => {
          state.rowAndCol = [action.payload, ...state.rowAndCol];
       },
-      resetHistory: (state, action) => {
+      resetHistory: (state) => {
          state.rowAndCol = [];
       },
    },
